@@ -224,10 +224,12 @@ A compiled Android APK can be made available through GitHub Releases.
 
 MediMind was developed as a 3rd-year academic project for the Department of Computer Science and Engineering at Leading University.
 
-**Department:** Computer Science and Engineering
-**University:** Leading University
-**Project Type:** Academic Mobile Application
-**Target Platform:** Android
+| Information | Details |
+|---|---|
+| **Department** | Computer Science and Engineering |
+| **University** | Leading University |
+| **Project Type** | Academic Mobile Application |
+| **Target Platform** | Android |
 
 ---
 
@@ -241,10 +243,14 @@ MediMind was developed as a 3rd-year academic project for the Department of Comp
 
 ### Project Supervisor
 
-**Md. Jamaner Rahaman**
-Assistant Professor
-Department of Computer Science and Engineering
-Leading University
+## 👨‍🏫 Project Supervisor
+
+| Information | Details |
+|---|---|
+| **Name** | Md. Jamaner Rahaman |
+| **Designation** | Assistant Professor |
+| **Department** | Computer Science and Engineering |
+| **University** | Leading University |
 
 ---
 
