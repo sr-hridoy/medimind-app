@@ -99,22 +99,10 @@ Depending on the project configuration, Firebase Realtime Database and/or Cloud 
 ## 📱 Mobile UI Screenshots
 
 <div align="center">
-  <img src="assets/screenshots/login.jpeg" width="200" alt="Login Screen"/>
-  <img src="assets/screenshots/patient_dashboard.jpeg" width="200" alt="Patient Dashboard"/>
-  <img src="assets/screenshots/monitor_dashboard.jpeg" width="200" alt="Monitor Dashboard"/>
-</div> 
-
-<br>
-
-<details>
-  <summary><b>🖼️ Click to view more screens (Welcome, Registration & Admin)</b></summary>
-  <br>
-  <div align="center">
-    <img src="assets/screenshots/welcome.jpeg" width="200" alt="Welcome Screen"/>
-    <img src="assets/screenshots/registration.jpeg" width="200" alt="Registration Screen"/>
-    <img src="assets/screenshots/admin_dashboard.jpeg" width="200" alt="Admin Dashboard"/>
-  </div>
-</details>
+  <img src="assets/screenshots/login.jpeg" width="32%" alt="Login Screen"/>
+  <img src="assets/screenshots/patient_dashboard.jpeg" width="32%" alt="Patient Dashboard"/>
+  <img src="assets/screenshots/monitor_dashboard.jpeg" width="32%" alt="Monitor Dashboard"/>
+</div>
 
 ## 🛠️ Technology Stack
 
