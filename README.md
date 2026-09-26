@@ -120,8 +120,8 @@ Depending on the project configuration, Firebase Realtime Database and/or Cloud 
 **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/sr-hridoy/medimind_app.git
-cd medimind_app
+git clone https://github.com/sr-hridoy/medimind-app.git
+cd medimind-app
 ```
 
 #### 2. Install Dependencies
