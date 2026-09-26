@@ -167,15 +167,15 @@ flutter run
 A simplified project structure is shown below:
 
 ```text
-medimind_app/
+medimind-app/
 │
 ├── android/
 │
 ├── assets/
 │   └── screenshots/
-│       ├── login.png
-│       ├── patient_dashboard.png
-│       └── monitor_dashboard.png
+│       ├── login.jpeg
+│       ├── patient_dashboard.jpeg
+│       └── monitor_dashboard.jpeg
 │
 ├── lib/
 │   ├── ...
@@ -212,8 +212,7 @@ The complete project report provides detailed information about the system, incl
 
 A compiled Android APK can be made available through GitHub Releases.
 
-[**📥Download APK →**](../../releases)
-
+[**📥Download APK →**](https://github.com/sr-hridoy/medimind-app/releases)
 ---
 
 ## 🎓 Academic Project
@@ -279,7 +278,4 @@ The application brings together:
 
 into a single mobile platform designed to support patients and their families.
 
-```
-
-This keeps the **app-repository style** professional: badges, a concise project introduction, feature presentation, user-mode table, tech stack, architecture, UI showcase, setup, documentation, download, team, security, and license—without turning the README into a copy of your CG project's structure.
 ```
