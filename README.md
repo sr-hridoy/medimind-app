@@ -277,5 +277,3 @@ The application brings together:
 **Medication Management • Scheduling • Reminders • Patient Tracking • Caregiver Monitoring • Cloud Synchronization**
 
 into a single mobile platform designed to support patients and their families.
-
-```
