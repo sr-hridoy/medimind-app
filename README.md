@@ -232,9 +232,9 @@ MediMind was developed as a 3rd-year academic project for the Department of Comp
 
 ### Development Team
 
-* **Ispak Jahan Ispa**
-* **M. M. Asif Bin A. Rahman**
 * **Md. Shaifur Rahman Hridoy**
+* **M. M. Asif Bin A. Rahman**
+* **Ispak Jahan Ispa**
 
 ## 👨‍🏫 Project Supervisor
 
