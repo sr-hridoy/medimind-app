@@ -98,15 +98,11 @@ Depending on the project configuration, Firebase Realtime Database and/or Cloud 
 
 ## 📱 Mobile UI Screenshots
 
-*(Place the application screenshots inside your repository's `assets/screenshots/` folder and uncomment the code below to display them)*
-
-<!-- 
 <div align="center">
-  <img src="assets/screenshots/login.png" width="200" alt="Login Screen"/>
-  <img src="assets/screenshots/patient_dashboard.png" width="200" alt="Patient Dashboard"/>
-  <img src="assets/screenshots/monitor_dashboard.png" width="200" alt="Monitor Dashboard"/>
-</div> 
--->
+  <img src="assets/screenshots/login.jpeg" width="200" alt="Login Screen"/>
+  <img src="assets/screenshots/patient_dashboard.jpeg" width="200" alt="Patient Dashboard"/>
+  <img src="assets/screenshots/monitor_dashboard.jpeg" width="200" alt="Monitor Dashboard"/>
+</div>
 
 ## 🛠️ Technology Stack
 
@@ -240,8 +236,6 @@ MediMind was developed as a 3rd-year academic project for the Department of Comp
 * **Ispak Jahan Ispa**
 * **M. M. Asif Bin A. Rahman**
 * **Md. Shaifur Rahman Hridoy**
-
-### Project Supervisor
 
 ## 👨‍🏫 Project Supervisor
 
