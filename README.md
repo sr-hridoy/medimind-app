@@ -1,157 +1,127 @@
-````markdown
 # MediMind 💊
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)
 ![Dart](https://img.shields.io/badge/Dart-3.x-blue.svg)
 ![Firebase](https://img.shields.io/badge/Firebase-Backend-orange.svg)
 ![Android](https://img.shields.io/badge/Platform-Android-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-> **MediMind — Medication Management & Caregiver Support**
+## 📌 Project Overview
 
-MediMind is a mobile application designed to improve medication adherence and health management by providing a reliable, inclusive, and user-friendly platform for patients and caregivers.
+**MediMind** is a mobile application designed to improve medication adherence and health management for patients and caregivers.
 
-The application is designed particularly for elderly and chronically ill individuals who may require regular medication reminders and support from family members or caregivers.
+The application is designed especially for elderly and chronically ill individuals who may need regular medication reminders and support from family members or caregivers.
 
----
+MediMind provides a simple platform where patients can manage their medications and caregivers can monitor medication schedules and adherence.
 
-## ✨ Key Features
+> **Note:** MediMind is an academic mobile application developed as a 3rd-year project for the Department of Computer Science and Engineering at Leading University.
 
-### 👤 Patient Management
+## 🎯 Project Objectives
 
-Patients can manage their medications and schedules through a dedicated interface.
+The main objectives of MediMind are:
 
-- Add and manage medications
-- Configure medication dosage
-- Set specific medication times
-- Create daily or weekly schedules
-- Track medication status
-- Receive medication reminders
+* Help patients remember their medication schedules.
+* Allow patients to manage their medications and dosages.
+* Provide medication reminders at specific times.
+* Allow caregivers to monitor a patient's medication adherence.
+* Provide offline medication alerts.
+* Synchronize medication information using Firebase.
+* Provide separate interfaces for Patients and Monitors.
 
-### 👨‍👩‍👧 Caregiver Monitoring
+## 👥 User Roles
 
-MediMind allows family members and caregivers to stay informed about a patient's medication activity.
+MediMind provides two main user roles:
 
-- Link caregivers to a patient
-- Support up to five caregivers per patient
-- View medication schedules
-- Monitor taken and missed doses
-- Stay informed about medication adherence
+### 1. Patient
+Patients can:
+* Create and manage their account.
+* Add medications.
+* Set medication dosage information.
+* Schedule daily or weekly medication reminders.
+* Receive medication alerts.
+* Track whether medications were taken or missed.
+* Allow caregivers to monitor their medication status.
 
-### 🔔 Medication Reminders
+### 2. Monitor / Caregiver
+Monitors can:
+* Connect to a patient's account.
+* View the patient's medication schedule.
+* Monitor medication adherence.
+* Check whether scheduled doses were taken or missed.
+* Help family members stay informed about the patient's medication status.
 
-The application provides scheduled medication alerts directly on the device.
+## 🚀 Main Features
 
-- Daily reminders
-- Weekly reminders
-- Specific medication times
-- Local device notifications
-- Offline reminder support
+| Feature | Description |
+| :--- | :--- |
+| **Dual-Mode Interface** | Separate dashboards for Patients and Monitors |
+| **Medication Management** | Add medications, dosage information, and schedules |
+| **Daily / Weekly Scheduling** | Configure medication schedules based on specific days and times |
+| **Offline Alerts** | Receive medication reminders without requiring an active internet connection |
+| **Caregiver Monitoring** | Allow caregivers to monitor medication adherence |
+| **Multiple Caregivers** | Up to five family members or caregivers can be linked to a patient |
+| **Firebase Authentication** | Secure email/password-based user authentication |
+| **Cloud Synchronization** | Synchronize application data through Firebase |
 
-### 🔐 Authentication & Cloud Data
+## 🧠 System Architecture
 
-Firebase is used to manage authentication and cloud-based application data.
+MediMind follows an object-oriented application structure using Flutter and Firebase. The major components of the system are:
 
-- Email/password authentication
-- Secure user accounts
-- Cloud data synchronization
-- Real-time data updates
+* **Flutter UI:** Provides the mobile application interface.
+* **Patient Module:** Handles patient medication management and tracking.
+* **Monitor Module:** Handles caregiver monitoring features.
+* **Authentication Module:** Manages user registration and login.
+* **Medication Module:** Stores medication information and schedules.
+* **Notification Module:** Handles medication reminder alerts.
+* **Firebase Backend:** Provides authentication and cloud data synchronization.
 
----
+## 🔔 Medication Reminder System
 
-## 🧩 User Modes
+The medication reminder system allows patients to configure:
+* Medication name
+* Dosage
+* Specific reminder time
+* Daily schedules
+* Weekly schedules
 
-MediMind provides two specialized interfaces based on the user's role.
+The application can generate local medication alerts on the device so that users can receive reminders even when an active internet connection is not available.
 
-| User | Main Purpose |
-|---|---|
-| **Patient** | Manage medications, schedules, reminders, and medication status |
-| **Monitor / Caregiver** | Monitor a patient's medication schedule and adherence |
+## ☁️ Firebase Integration
 
----
+Firebase is used as the backend service for MediMind. The project uses Firebase for:
+* User authentication
+* User account management
+* Medication data storage
+* Real-time data synchronization
+* Cloud-based application data
 
-## 🛠️ Technology Stack
+Depending on the project configuration, Firebase Realtime Database and/or Cloud Firestore can be used for storing application data.
 
-| Technology | Purpose |
-|---|---|
-| **Flutter** | Mobile application development |
-| **Dart** | Application programming language |
-| **Firebase Authentication** | User registration and login |
-| **Firebase Realtime Database / Cloud Firestore** | Cloud data storage and synchronization |
-| **Android** | Target mobile platform |
-| **Android Studio / VS Code** | Development environment |
+## 📱 Mobile UI Screenshots
 
----
+*(Place the application screenshots inside your repository's `assets/screenshots/` folder and uncomment the code below to display them)*
 
-## 🏗️ Application Architecture
-
-MediMind follows an object-oriented application architecture.
-
-The major parts of the application include:
-
-```text
-User
- │
- ├── Patient
- │    ├── Medication Management
- │    ├── Medication Scheduling
- │    ├── Reminder Notifications
- │    └── Medication Tracking
- │
- └── Monitor / Caregiver
-      ├── Patient Linking
-      ├── Schedule Monitoring
-      └── Adherence Monitoring
-
-                │
-                ▼
-
-        Firebase Services
-        ├── Authentication
-        └── Cloud Database
-````
-
-The application combines local device functionality with Firebase services to provide medication management and caregiver synchronization.
-
----
-
-## 📱 Mobile UI
-
-Application screenshots can be stored in:
-
-```text
-assets/
-└── screenshots/
-    ├── login.png
-    ├── patient_dashboard.png
-    └── monitor_dashboard.png
-```
-
-### Application Screens
-
+<!-- 
 <div align="center">
   <img src="assets/screenshots/login.png" width="200" alt="Login Screen"/>
   <img src="assets/screenshots/patient_dashboard.png" width="200" alt="Patient Dashboard"/>
   <img src="assets/screenshots/monitor_dashboard.png" width="200" alt="Monitor Dashboard"/>
-</div>
+</div> 
+-->
 
----
+## 🛠️ Technology Stack
 
-## 🚀 Getting Started
+| Technology | Purpose |
+| :--- | :--- |
+| **Flutter** | Mobile application development |
+| **Dart** | Programming language |
+| **Firebase Authentication** | User authentication |
+| **Firebase RTDB / Firestore** | Cloud data storage and synchronization |
+| **Android** | Target platform |
+| **Android Studio / VS Code** | Development environment |
 
-### Prerequisites
+## ⚙️ Installation & Usage
 
-Before running MediMind, make sure the following software is installed:
-
-* Flutter SDK
-* Dart SDK
-* Android Studio or Visual Studio Code
-* Android device or emulator
-* Firebase account and project
-
-### Installation
-
-#### 1. Clone the Repository
+**1. Clone the Repository**
 
 ```bash
 git clone https://github.com/sr-hridoy/medimind_app.git
