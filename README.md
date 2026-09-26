@@ -212,11 +212,11 @@ The complete project report provides detailed information about the system, incl
 
 ---
 
-## 📦 App Download
+## 📱 App Download
 
 A compiled Android APK can be made available through GitHub Releases.
 
-[**Download APK →**](../../releases)
+[**📥Download APK →**](../../releases)
 
 ---
 
