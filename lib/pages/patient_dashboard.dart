@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../services/auth_service.dart';
 import '../services/database_service.dart';
+import '../services/notification_service.dart';
 import 'add_medicine_page.dart';
 import 'login_page.dart';
 import 'monitor_dashboard.dart';
@@ -65,8 +66,18 @@ class _PatientDashboardState extends State<PatientDashboard> {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () {
+                    onPressed: () async {
                       Navigator.pop(context);
+                      // Cancel all scheduled notifications for this medicine
+                      // BEFORE deleting it from Firestore.
+                      try {
+                        await NotificationService().cancelForMedicine(
+                          docId: docId,
+                          med: med,
+                        );
+                      } catch (e) {
+                        debugPrint('Cancel notifications failed: $e');
+                      }
                       _dbService.deleteMedicine(docId).catchError((e) {
                         debugPrint('Delete failed: $e');
                       });

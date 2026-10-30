@@ -88,20 +88,18 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       final docId = docRef.id;
 
       try {
-        final notificationService = NotificationService();
-        for (final time in timeStrings) {
-          final notificationId = NotificationService.generateNotificationId(
-            docId,
-            time,
-          );
-          await notificationService.scheduleDoseNotification(
-            medicineId: docId,
-            medicineName: _name.text.trim(),
-            dose: _dose.text.trim(),
-            time: time,
-            notificationId: notificationId,
-          );
-        }
+        // scheduleForMedicine handles both Daily (repeating every day)
+        // and Specific Days (repeating every week on selected weekdays).
+        await NotificationService().scheduleForMedicine(
+          docId: docId,
+          med: {
+            'name': _name.text.trim(),
+            'dose': _dose.text.trim(),
+            'schedule': _sched,
+            'times': timeStrings,
+            'selectedDays': _days,
+          },
+        );
       } catch (e) {
         debugPrint("Error scheduling notifications: $e");
       }
